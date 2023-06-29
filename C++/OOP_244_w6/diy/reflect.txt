@@ -1,0 +1,10 @@
+Francisco Castillo
+fcastillo-rojas1@myseneca.ca
+
+
+In this workshop I learned how to combine structs and classes. 
+In addition, I learned how to implement a copy constructor and copy allocation, 
+techniques to avoid memory leaks. Finally, it was less challenging to read and write to files. 
+The most difficult part was resizing the memory allocated for a 2D array, 
+very useful when I tried to store data in an array when 
+I didn't know how much data we will have in that file. 

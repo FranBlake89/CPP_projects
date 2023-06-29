@@ -1,0 +1,144 @@
+Script started on Sun 05 Feb 2023 10:52:57 PM EST
+==234553== Memcheck, a memory error detector
+==234553== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==234553== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==234553== Command: ws
+==234553== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+--------------------------
+
+******************************************************
+* Testing the Collection of Integers                 *
+******************************************************
+Collection size: [7]
+----------------------
+| Collection Content |
+----------------------
+16
+12
+9
+3
+21
+12
+23
+----------------------
+Item [0]: 16
+Item [5]: 12
+Item [9]: 0
+******************************************************
+
+******************************************************
+* Testing the Set of Integers                        *
+******************************************************
+Set size: [6]
+----------------------
+| Collection Content |
+----------------------
+16
+12
+9
+3
+21
+23
+----------------------
+Item [0]: 16
+Item [5]: 23
+Item [9]: 0
+******************************************************
+
+******************************************************
+* Testing the Collection of Floats                   *
+******************************************************
+Collection size: [6]
+----------------------
+| Collection Content |
+----------------------
+1.222
+5.777
+1.223
+51.333
+8.888
+1.221
+----------------------
+Item [0]: 1.222
+Item [5]: 1.221
+Item [9]: 0
+******************************************************
+
+******************************************************
+* Testing the Set of Floats                          *
+******************************************************
+Set size: [4]
+----------------------
+| Collection Content |
+----------------------
+1.222
+5.777
+51.333
+8.888
+----------------------
+Item [0]: 1.222
+Item [5]: 0
+Item [9]: 0
+******************************************************
+
+******************************************************
+* Testing the Collection of Pairs                    *
+******************************************************
+Collection size: [9]
+----------------------
+| Collection Content |
+----------------------
+       static memory: memory allocated during the compilation time
+          programmer: a person who writes code
+      dynamic memory: memory allocated during the runtime
+   client of a class: a piece of code that uses the class
+      dynamic memory: memory allocated with 'new' operator
+                user: a person who runs and interracts with the program
+               array: a contiguous block of memory storing multiple objects
+client of a function: a piece of code that uses the function
+                user: Just John!
+----------------------
+Item [0]: [static memory][memory allocated during the compilation time]
+Item [8]: [user][Just John!]
+Item [9]: [][]
+******************************************************
+
+******************************************************
+* Testing the Set of Pairs                           *
+******************************************************
+Set size: [7]
+----------------------
+| Collection Content |
+----------------------
+       static memory: memory allocated during the compilation time
+          programmer: a person who writes code
+      dynamic memory: memory allocated during the runtime
+   client of a class: a piece of code that uses the class
+                user: a person who runs and interracts with the program
+               array: a contiguous block of memory storing multiple objects
+client of a function: a piece of code that uses the function
+----------------------
+Item [1]: [programmer][a person who writes code]
+Item [4]: [user][a person who runs and interracts with the program]
+Item [11]: [][]
+******************************************************
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==234553== 
+==234553== HEAP SUMMARY:
+==234553==     in use at exit: 0 bytes in 0 blocks
+==234553==   total heap usage: 89 allocs, 89 frees, 75,953 bytes allocated
+==234553== 
+==234553== All heap blocks were freed -- no leaks are possible
+==234553== 
+==234553== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 05 Feb 2023 10:52:58 PM EST

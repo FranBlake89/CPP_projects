@@ -1,0 +1,9 @@
+Francisco Castillo
+
+Reflection
+
+	In this workshop I learned how to define a pure virtual function, and call it from a derived class. 
+In addition, I was able to create abstract base classes, also called parent classes. This allows me to derive properties 
+and characteristics (inheritance). Finally, I was able to undestand the difference between
+and abstract and concrete class, the former being used as a base class where the function is declared purely virtual. 
+In contrast, a concrete class is an ordinary class that does not have purely virtual functions.

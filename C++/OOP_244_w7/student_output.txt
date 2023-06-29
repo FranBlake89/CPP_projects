@@ -1,0 +1,83 @@
+Script started on Fri 11 Nov 2022 02:34:21 PM EST
+==117939== Memcheck, a memory error detector
+==117939== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==117939== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==117939== Command: ws
+==117939== 
+----------------------------------------------------------
+|> Vehicle 1: Basic Vehicle
+----------------------------------------------------------
+| 2010 | abc-123 | Factory
+
+| abc-123| |             Factory ---> Downtown Toronto    |
+| abc-123| |    Downtown Toronto ---> Mississauga         |
+| abc-123| |         Mississauga ---> North York          |
+
+| 2010 | abc-123 | North York
+
+----------------------------------------------------------
+|> Vehicle 2: Read/Write
+----------------------------------------------------------
+Built year: 2018
+License plate: abc-123
+Current location: Ottawa
+
+| 2018 | abc-123 | Ottawa
+
+----------------------------------------------------------
+|> Vehicle 3: Dumper
+----------------------------------------------------------
+|  T-1111| |             Factory ---> Toronto HQ          |
+
+|  T-1111| |          Toronto HQ ---> Toronto Deposit     |
+
+Cargo loaded!
+Status | 2015 | T-1111 | Toronto Deposit | 2345/5432
+
+|  T-1111| |     Toronto Deposit ---> Ottawa              |
+
+Cargo loaded!
+Status | 2015 | T-1111 | Ottawa | 2468/5432
+
+|  T-1111| |              Ottawa ---> Montreal            |
+
+Loading cargo failed!
+Status | 2015 | T-1111 | Montreal | 2468/5432
+
+|  T-1111| |            Montreal ---> New York            |
+
+Loading cargo failed!
+Status | 2015 | T-1111 | New York | 2468/5432
+
+|  T-1111| |            New York ---> New Jersey          |
+
+Cargo unloaded!
+Status | 2015 | T-1111 | New Jersey | 0/5432
+
+|  T-1111| |          New Jersey ---> Toronto             |
+
+Unloading cargo failed!
+Status | 2015 | T-1111 | Toronto | 0/5432
+
+----------------------------------------------------------
+|> Vehicle 4: Read/Write
+----------------------------------------------------------
+Built year: 2020
+License plate: dab-112
+Current location: Montreal
+Capacity: 7000
+Cargo: 0
+
+| 2020 | dab-112 | Montreal
+| 2020 | dab-112 | Montreal | 0/7000
+
+==117939== 
+==117939== HEAP SUMMARY:
+==117939==     in use at exit: 0 bytes in 0 blocks
+==117939==   total heap usage: 19 allocs, 19 frees, 73,278 bytes allocated
+==117939== 
+==117939== All heap blocks were freed -- no leaks are possible
+==117939== 
+==117939== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 11 Nov 2022 02:34:51 PM EST

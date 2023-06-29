@@ -1,0 +1,8 @@
+Francisco Castillo
+
+reflection 
+
+In this workshop I learnt how to declare and define an inherit a derived class from a base class, this allow me get access
+to member of the base class. The shadow function was very usefull when I tried to avoid confusion to the compiler. 
+Finally, I could improve the use of custom input/output operators, this part was the most difficult because I made some
+syntax mistakes, which led me to linker errors, but it was a great debugging exercise  

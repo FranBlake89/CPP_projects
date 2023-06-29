@@ -1,0 +1,9 @@
+Francisco Castillo 
+fcastillo-rojas1@myseneca.ca
+
+Reflect
+
+With the completition of this Workshop, I could understand the functions templates and how to use it.
+Also, how to call this functions and how to pass as an argument. These allows me to create functions
+that could received any type of data, allow me simplify many things, for example; reducing the repetition of code, 
+increase safety and can increase performance.

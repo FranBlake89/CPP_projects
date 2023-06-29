@@ -1,0 +1,8 @@
+foodorder.cpp: In member function ‘void sdds::FoodOrder::setEmpty()’:
+foodorder.cpp:68:20: error: expected ‘;’ before ‘{’ token
+   68 |  c_name[lenName +1] {};
+      |                    ^~
+      |                    ;
+foodorder.cpp:68:19: warning: statement has no effect [-Wunused-value]
+   68 |  c_name[lenName +1] {};
+      |  ~~~~~~~~~~~~~~~~~^

@@ -1,0 +1,11 @@
+Francisco Castillo
+fcastillo-rojas1@myseneca.ca
+
+REFLECTION
+
+In this milestone I was able to learn how to store and manipulate arrays of objects, how to handle the memories leaks
+that I had, and how to read a file into dynamically allocated memory. Also, I could understand deepper how to read 
+files and manipulate the data of them, create a backup in case the data was deleted, using coustom  input/ouput. 
+Finally, I could understand how to create functions that  help me to get access to set or get data from private 
+or protected variable, apply the rule of three and its derived classes. It most challenging part was understand how
+to define the prototypes in this milestone and then how to search the license and how to store the objects and delete them.  

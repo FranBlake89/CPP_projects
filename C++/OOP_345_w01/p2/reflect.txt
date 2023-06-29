@@ -1,0 +1,16 @@
+/*
+   ---------------------------------------
+Name:		Francisco Castillo
+Seneca Id:	148904212
+e-mail:		fcastillo-rojas1@myseneca.ca
+Section:	NDD
+   ---------------------------------------
+*/
+
+REFLECTION
+
+This workshop was very helpful in remembering how to correctly read different files, and how to use the getline function.
+The hardest part was remembering and understanding the "rule of three", and how to avoid memory leaks.
+Saving a class definition of duplication was difficult to understand because some basic knowledge was not "settled", 
+so it cost me to properly perform part 2, having to resort to Professor Fardad's recordings. Although I had used "static" 
+in the past, I did not understand the utility. Now I know they are crazy because of the lifetime of the program, only once. Finally, extern, to apply to the global variables for taxes and discounts.

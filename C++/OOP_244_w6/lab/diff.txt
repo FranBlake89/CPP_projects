@@ -1,0 +1,14 @@
+In line number 61 of your output:
+The output should be:
+3.00, 6.00, 12.20, 34.10, 34.56
+^
+But your output is: 
+6.00, 12.20, 3.00, 34.10, 34.56
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [3] ASCII code(51)
+but you printed
+  [6] ASCII code(54)
+

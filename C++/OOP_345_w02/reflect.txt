@@ -1,0 +1,11 @@
+Francisco Castillo
+OOP345
+NDD
+
+
+
+I learned how to declare, implement and use a class to manage a statically allocated array of objects and a dynamically allocated array of strings. I also updated an existing class to include a move constructor and a move assignment operator.
+
+I learned the differences between a move constructor and a move assignment operator and how to use them. 
+
+Move semantics is an optimization technique that allows you to move the resources associated with an object, rather than copy them, when the object needs to be relocated. This significantly improves performance, since ideally no additional data needs to be copied.

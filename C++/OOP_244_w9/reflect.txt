@@ -1,0 +1,11 @@
+Francisco Castillo
+fcastillo-rojas1@myseneca.ca
+
+Reflection WS-9
+
+In this workshop I reinforce the rule of three; destructor, copy constructor, copy assigment operator.
+This allow us avoid the shallow copies that default compiler create.
+But it was difficult to complety understand the destructor in this rule, to avoid 
+the errors messages in valgrind, this issue I could solve in milestone, the solution I implemented
+did not effective in this workshop.
+

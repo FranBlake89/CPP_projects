@@ -1,0 +1,34 @@
+Francisco Castillo
+
+Reflection WorkShop 3 - TEMPLATES-
+
+In Workshop 3, I learned about class templates and how to use them to create generic classes 
+that can work with different types of data. I was tasked with designing and coding several 
+class templates and testing them on different instances. The workshop consisted of the modules: 
+Pair, Collection and Set.
+
+The reason for specializing the add() member function was to allow it to process a particular 
+type differently from other types. For example, in the Collection module, the add() function 
+is specialized to the std::string data type to handle the addition of a key-value pair to the 
+collection. This allows the Collection class to work with different data types while maintaining 
+its functionality.
+
+Defining the class variable outside the class definition was necessary because templates are 
+not instantiated until they are called. The class variable is defined outside the class
+definition so that it can be accessible to all instances of the class, regardless of the data 
+type used. This allows the class to maintain its functionality even when used with different 
+data types.
+
+As for the Pair module, it was necessary to add the getKey() and getValue() member functions 
+to allow access to the key and value stored in the Pair object. The Pair class was also 
+designed to be used with the template classes of the Collection and Set modules, so it was 
+necessary to add the necessary prototypes for these members so that the Pair class could 
+be used in these contexts.
+
+Finally, as to why the Collection and Set modules only have a header file and not a header 
+and implementation file, it is because the templates are compiled at run time and not at 
+compile time. Consequently, the implementation is included in the header file to ensure 
+that the compiler can access the code when needed.
+
+Overall, this workshop helped me understand the basics of class templates and how they 
+can be used to create generic classes that can work with different data types.

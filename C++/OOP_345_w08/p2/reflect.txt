@@ -1,0 +1,28 @@
+Francisco Castillo Rojas
+OOP345
+
+REFLECTION 
+
+
+* why couldn't we use a unique_ptr in your Database class?
+
+When we create a private class variable (static attribute) that will store the address of the single instance of the Database type, we can use the following definition: 
+static std::shared_ptr<Database> m_instance;
+shared_ptr is a smart pointer that can manage the lifetime of a dynamically allocated object using reference counting. This means that the object will be automatically deleted when there are no more shared_ptr objects pointing to it.
+unique_ptr is not a good choice for this attribute because it does not allow copying or allocating. This means that you cannot return a copy of unique_ptr from the getInstance() function, which is required by the Database class design.
+
+
+* What changes did you have to make in part 1 to transform the class into a templated one?
+Transfer all my code from the .cpp file to the header file. This approach ensures that I receive various types of data and my code still works, this also helped me to implement the encryptDecrypt functions.
+
+
+* A class that allows only one instance to be created is called a singleton. Can you think of another way to create a singleton without using static members? How would such an object be managed?
+One possible way to create a singleton without using static members in C++ is to use a local static variable inside a static member function that returns a reference to the singleton object. This approach ensures that only one instance of the singleton class can be created, and accessed through the getInstance() function. This also avoids the need for thread synchronization or lazy initialization, since the local static variable is initialized only once when the function is first called. Another possible way is to use an enum type with a single value. This value represents the instance of the singleton class.
+
+
+* The Database class has a resource attribute (the database instance), however no copy/move operations have been implemented. Is this an error (justify your answer)?
+No, it is not a bug. The Database class has a resource attribute (the database instance), yet no copy/move operations were implemented. This is because the Database class is designed to be a singleton, which means that only one instance of the class can exist at any time. Therefore, copying or moving the database instance would violate the singleton principle and create multiple instances of the same resource. To avoid this, the copy constructor and the copy assignment operator are removed in the class definition, and the move constructor and the move assignment operator are implicitly removed by the compiler. In this way, the class database cannot be copied or moved by any means, and an instance of it can only be accessed through the static member function getInstance(). This ensures that the resource attribute (the database instance) is handled properly and consistently throughout the program.
+
+
+* we said that the Database class can be instantiated only once, however in the output we see that the custom constructor is called twice (the same for the destructor). Explain.
+The reason why the custom constructor is called twice (as well as the destructor) is because the main function creates two different types of Database objects: one with std::string values and one with long long values. Since the Database class is a template class, each instantiation of the class with a different template parameter creates a different type. Therefore, the Databasestd::string type and the Database<long long> type are not the same, and each has its own static member variable m_database that stores the address of the singleton instance. This means that each type can only have one instance, but there can be multiple instances of different types. This is the reason why the custom constructor is called twice: once for each type. The same logic applies to the destructor, which is called twice when each type leaves the scope.
