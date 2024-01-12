@@ -10,14 +10,14 @@ This repository contains workshops and final projects for C++ and C courses in O
 
 ## List of Workshops:
 
-1. C
+### C
 -----
    1. `Wish List ForeCaster` : A C program for financial planning, forecasting the time needed to fulfill a wish list based on monthly income, item costs, priorities, and financing options.
    2. `Treasure Hunt` : An interactive C game implementing structs and functions. Players configure characters and game settings to navigate a path, avoiding bombs and uncovering treasures.
    3. `Veterinary Clinic Management System` : A C program managing a veterinary clinic system with patient data management, appointment tracking, and user-friendly menus for efficient clinic operations.
 
 
-2. C++
+### C++
 -----
    1. `Food Management System` : A C++ program for managing and displaying food orders, with support for in-house and delivery orders, daily specials, and command line input.
   
