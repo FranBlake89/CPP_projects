@@ -3,11 +3,11 @@
 This repository contains workshops and final projects for C++ and C courses in Object Oriented Programming at Seneca College. The courses cover versions C++11, C++14, and C++17.
 
 ## Final Projects:
-```
-1. $${\color{orange}**Valet Parking Application - OOP 244**}$$ : Innovative Valet Parking Application with Dynamic Features in C++.
+
+1. ${\color{orange}**Valet Parking Application - OOP 244**}$ : Innovative Valet Parking Application with Dynamic Features in C++.
 
 2. ! **Assembly Line Simulation - OOP 345**  # : C++ simulation for an assembly line with custom constructors, unique ID generation, and flexible display options. Ensures efficient order filling, smooth assembly line movement, and real-time status monitoring.
-```
+
 ## List of Workshops:
 
 1. C
