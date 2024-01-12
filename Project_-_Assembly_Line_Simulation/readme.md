@@ -4,7 +4,7 @@
 
 The purpose of this term project is to put your C++ Object Oriented skills to practice by developing a simulation of an assembly line with any number of stations. A line with 3 Stations is illustrated in the figure below.
 
-![Assembly Line](https://github.com/FranBlake89/CPP_projects/blob/main/Project_-_Assembly_Line_Simulation/assemblyline.jpg =600x400 )
+<img src='https://github.com/FranBlake89/CPP_projects/blob/main/Project_-_Assembly_Line_Simulation/assemblyline.jpg' width='400'>
 
 # Assembly line
 
