@@ -4,9 +4,9 @@ This repository contains workshops and final projects for C++ and C courses in O
 
 ## Final Projects:
 
-1. $\textcolor{orange}{**Valet\ Parking\ Application\ -\ OOP\ 244**\}$ : Innovative Valet Parking Application with Dynamic Features in C++.
+1. `**Valet Parking Application - OOP 244**` : Innovative Valet Parking Application with Dynamic Features in C++.
 
-2. ! **Assembly Line Simulation - OOP 345**  # : C++ simulation for an assembly line with custom constructors, unique ID generation, and flexible display options. Ensures efficient order filling, smooth assembly line movement, and real-time status monitoring.
+2. `**Assembly Line Simulation - OOP 345**`  : C++ simulation for an assembly line with custom constructors, unique ID generation, and flexible display options. Ensures efficient order filling, smooth assembly line movement, and real-time status monitoring.
 
 ## List of Workshops:
 
